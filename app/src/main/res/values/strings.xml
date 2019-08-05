@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">UBICATE: Tu seguridad es nuestro trabajo</string>
+    <string name="bienvenido">UBICATE</string>
+    <string name="lema">Tu seguridad es nuestro trabajo</string>
+    <string name="usuario">Usuario</string>
+    <string name="pass">Contraseña</string>
+
+</resources>
