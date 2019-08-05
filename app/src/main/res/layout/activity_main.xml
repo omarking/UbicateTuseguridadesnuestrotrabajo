@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:gravity="center_vertical"
+    tools:context=".MainActivity"
+    >
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            >
+
+            <TextView
+                android:id="@+id/bienvenida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bienvenido"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+
+                >
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/tutorcafe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lema"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textStyle="italic"
+                android:layout_gravity="center"
+                >
+            </TextView>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/imagen"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/mp5"
+            android:layout_weight="2.5"
+            android:layout_gravity="center"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            >
+            <TextView
+                android:id="@+id/usuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="@string/usuario"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textStyle="italic">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/editusario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/usuario"
+                android:layout_margin="5dp"
+
+                />
+
+            <TextView
+                android:id="@+id/pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pass"
+                android:layout_margin="10dp"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textStyle="italic"
+                android:layout_below="@+id/usuario"
+                >
+
+            </TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/usuario"
+                android:layout_below="@+id/editusario"
+                android:layout_margin="20dp"/>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.5"
+            >
+
+
+            <Button
+                android:id="@+id/conectar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pass"
+                android:text="Conectar"
+                />
+
+
+            <Button
+                android:id="@+id/cancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pass"
+                android:text="Cancelar"
+                />
+
+        </LinearLayout>
+
+
+</LinearLayout>
